@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
++
+
+
+
+   <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .currency-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        .currency-table th, .currency-table td {
+            padding: 10px;
+            text-align: center;
+        }
+        .currency-table th {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .currency-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .currency-table tr:hover {
+            background-color: #e2e2e2;
+        }
+    </style>
+    <title>Список курсов на валюты</title>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Список курсов на валюты</h1>
+        <table class="currency-table table table-striped mt-4">
+            <thead>
+            <tr>
+                
+                <th>Валюта</th>
+                <th>Покупка</th>
+                <th>Продажа</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Диваны</td>
+                    <td>@ViewBag.jopa</td>
+                    <td>@ViewBag.popa</td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td>85.20</td>
+                    <td>85.70</td>
+                </tr>
+                <tr>
+                    <td>GBP</td>
+                    <td>100.30</td>
+                    <td>100.80</td>
+                </tr>
+                <!-- Добавьте другие валюты и их курсы здесь -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+<p></p>
+<script>
+        // Добавьте JavaScript для интерактивности, если необходимо
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
