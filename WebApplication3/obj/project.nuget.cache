@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Zko7Iw9d7ze9/5tN7zMLief8uhZ8pUtoNbLjqaKrqwxx6hd7wrqPjgSwHea2AVBqEBTKaMEIvXBxp3OX4ELnfg==",
+  "dgSpecHash": "vL9xnP4xS83FLI96O9gK+yT7ySLEipROHicYKCvSlNWgWlF+05MrwWmAzRX9DRja/UYowabxCPP+ZojS54iY9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\koval\\RiderProjects\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
+  "projectFilePath": "E:\\C# Projects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\koval\\.nuget\\packages\\htmlagilitypack\\1.11.52\\htmlagilitypack.1.11.52.nupkg.sha512"
+    "C:\\Users\\Semir\\.nuget\\packages\\htmlagilitypack\\1.11.52\\htmlagilitypack.1.11.52.nupkg.sha512"
   ],
   "logs": []
 }

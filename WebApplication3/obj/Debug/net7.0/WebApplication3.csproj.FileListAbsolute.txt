@@ -31,3 +31,36 @@ C:\Users\koval\RiderProjects\WebApplication3\WebApplication3\obj\Debug\net7.0\re
 C:\Users\koval\RiderProjects\WebApplication3\WebApplication3\obj\Debug\net7.0\WebApplication3.pdb
 C:\Users\koval\RiderProjects\WebApplication3\WebApplication3\obj\Debug\net7.0\WebApplication3.genruntimeconfig.cache
 C:\Users\koval\RiderProjects\WebApplication3\WebApplication3\obj\Debug\net7.0\ref\WebApplication3.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\appsettings.Development.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\appsettings.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\WebApplication3.staticwebassets.runtime.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\WebApplication3.exe
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\WebApplication3.deps.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\WebApplication3.runtimeconfig.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\WebApplication3.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\WebApplication3.pdb
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\HtmlAgilityPack.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.csproj.AssemblyReference.cache
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.AssemblyInfoInputs.cache
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.AssemblyInfo.cs
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.csproj.CoreCompileInputs.cache
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.MvcApplicationPartsAssemblyInfo.cache
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.RazorAssemblyInfo.cache
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.RazorAssemblyInfo.cs
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssets.props
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\staticwebassets\msbuild.build.WebApplication3.props
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication3.props
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.WebApplication3.props
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\staticwebassets.pack.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\staticwebassets.build.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\staticwebassets.development.json
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\scopedcss\bundle\WebApplication3.styles.css
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\scopedcss\projectbundle\WebApplication3.bundle.scp.css
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.csproj.CopyComplete
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\refint\WebApplication3.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.pdb
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.genruntimeconfig.cache
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\ref\WebApplication3.dll
