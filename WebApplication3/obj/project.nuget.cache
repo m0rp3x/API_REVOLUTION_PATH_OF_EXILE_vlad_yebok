@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vL9xnP4xS83FLI96O9gK+yT7ySLEipROHicYKCvSlNWgWlF+05MrwWmAzRX9DRja/UYowabxCPP+ZojS54iY9A==",
+  "dgSpecHash": "oCrhmJblAyl56xcbgSn1cMBy/2wrZ9Z52h1xMghTQEYVjvxyxq5sUrxso9D2kGr3Zgr+5Ywj+2KfUXI+VpKApw==",
   "success": true,
   "projectFilePath": "E:\\C# Projects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Semir\\.nuget\\packages\\htmlagilitypack\\1.11.52\\htmlagilitypack.1.11.52.nupkg.sha512"
+    "C:\\Users\\Semir\\.nuget\\packages\\htmlagilitypack\\1.11.52\\htmlagilitypack.1.11.52.nupkg.sha512",
+    "C:\\Users\\Semir\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

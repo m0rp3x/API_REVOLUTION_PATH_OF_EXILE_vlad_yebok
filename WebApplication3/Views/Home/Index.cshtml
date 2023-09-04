@@ -1,8 +1,61 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<title>КУРСИК))</title>
+<body>
+<div class="container">
+    <table class="currency-table table table-striped mt-4">
+        <thead>
+        <tr>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+            <th>Валюта</th>
+            <th>Курс к рублю</th>
+            <th>Курс к хаосу</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr onclick="runSteamGame(238960)">
+            <td>Диваны</td>
+            <td>@ViewBag.jopa</td>
+            <td>@ViewBag.pisia</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
+
+
+<style>
+        
+        .container {
+            max-width: 1080px;
+            min-width: 1080px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .currency-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        .currency-table th, .currency-table td {
+            padding: 10px;
+            text-align: center;
+        }
+        .currency-table th {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .currency-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .currency-table tr:hover {
+            background-color: #e2e2e2;
+        }
+    </style>
+
+<script>
+function runSteamGame(gameId) {
+  var steamUrl = 'steam://run/' + gameId;
+  window.location.href = steamUrl;
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>

@@ -17,19 +17,16 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        FunPay funPay = new();
+        PoeTrade poeTrade = new();
         
+        await poeTrade.Generate();
         
+        ViewBag.pisia = poeTrade.divinePrice;
         
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        FunPay funPay = new FunPay();
         ViewBag.jopa = funPay.MinPrice;
-        ViewBag.popa = funPay.MaxPrice;
         return View();
     }
 }

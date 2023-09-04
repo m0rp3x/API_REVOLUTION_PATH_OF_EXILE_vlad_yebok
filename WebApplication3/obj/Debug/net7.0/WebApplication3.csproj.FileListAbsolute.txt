@@ -64,3 +64,4 @@ E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug
 E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.pdb
 E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\WebApplication3.genruntimeconfig.cache
 E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\obj\Debug\net7.0\ref\WebApplication3.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\Newtonsoft.Json.dll
