@@ -1,33 +1,22 @@
-﻿<title>КУРСИК))</title>
-<body>
-<div class="container">
-    <table class="currency-table table table-striped mt-4">
-        <thead>
-        <tr>
-
-            <th>Валюта</th>
-            <th>Курс к рублю</th>
-            <th>Курс к хаосу</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr onclick="runSteamGame(238960)">
-            <td>Диваны</td>
-            <td>@ViewBag.jopa</td>
-            <td>@ViewBag.pisia</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-
-
-<style>
-        
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КУРСИК))</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
         .container {
             max-width: 1080px;
             min-width: 1080px;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
+            margin-top: 50px;
+            
         }
         .currency-table {
             width: 100%;
@@ -48,14 +37,60 @@
         .currency-table tr:hover {
             background-color: #e2e2e2;
         }
+       .animated-line {
+                   position: fixed;
+                   top: 3px;
+                   left: 0;
+                   right: 0;
+                   height: 25px;
+                   background-color: #007bff;
+               }
+        .moving-text {
+            white-space: nowrap;
+            animation: moveText 25s linear infinite;
+        }
+        .ZAgolovok{
+        text-align: center;
+        }
+        
+      
     </style>
+</head>
+<body>
+
+<div class="animated-line">
+    <div class="moving-text">Ruble @ViewBag.jopa &nbsp; &nbsp; &nbsp; Chaos @ViewBag.pisia</div>
+</div>
+    <div class="ZAgolovok"><h1>Курсик диванов</h1></div>
+
+<div class="container">
+
+    <table class="currency-table table table-striped mt-4">
+        <thead>
+        <tr>
+            <th>Валюта</th>
+            <th>Курс к рублю</th>
+            <th>Курс к хаосу</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr onclick="runSteamGame(238960)">
+            <td><img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e1a54ff97d/CurrencyModValues.png"/>Дивайн</td>
+            <td><img src="https://bipbap.ru/wp-content/uploads/2017/10/22-1-640x427.png" width="47" height="47"/> @ViewBag.jopa</td>
+            <td><img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d119a0d734/CurrencyRerollRare.png"/> @ViewBag.pisia</td>
+        </tr>
+        <!-- Добавьте другие строки с курсами валют здесь -->
+        </tbody>
+    </table>
+</div>
 
 <script>
-function runSteamGame(gameId) {
-  var steamUrl = 'steam://run/' + gameId;
-  window.location.href = steamUrl;
-}
-</script>
+        function runSteamGame(gameId) {
+            var steamUrl = 'steam://run/' + gameId;
+            window.location.href = steamUrl;
+        }
+    </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>
