@@ -7,7 +7,7 @@ public class ApplicationContext : DbContext
 {
     private string? connectionString;
     
-    public DbSet<DivineCourse> DivineCourses { get; set; }
+    public DbSet<DivineCourse?> DivineCourses { get; set; }
     
     public ApplicationContext(DbContextOptions<ApplicationContext> contextOptions)
         : base(contextOptions)
