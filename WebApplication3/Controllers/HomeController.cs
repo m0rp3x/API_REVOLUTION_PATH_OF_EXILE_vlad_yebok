@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApplication3.Models;
 using HtmlAgilityPack;
 using WebApplication3.API;
-
+using WebApplication3.Models;
 namespace WebApplication3.Controllers;
 
 public class HomeController : Controller
@@ -27,7 +27,14 @@ public class HomeController : Controller
         ViewBag.pisia = poeTrade.divinePrice;
         
         ViewBag.jopa = funPay.MinPrice;
+        
+        DivineCourse divineCourse = new DivineCourse();
+        
+        ViewBag.anal = ((int.Parse(poeTrade.divinePrice.ToString()) - divineCourse.RUB) / divineCourse.RUB) * 100;
         return View();
+
+        
+
     }
 }
 
