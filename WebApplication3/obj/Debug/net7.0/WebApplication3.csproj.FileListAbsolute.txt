@@ -219,3 +219,21 @@ C:\Users\koval\RiderProjects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplicat
 C:\Users\koval\RiderProjects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\tr-TR\Hangfire.Core.resources.dll
 C:\Users\koval\RiderProjects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\zh-TW\Hangfire.Core.resources.dll
 C:\Users\koval\RiderProjects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\zh\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\Hangfire.AspNetCore.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\Hangfire.Core.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\Hangfire.NetCore.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\Hangfire.SqlServer.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\ca\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\de\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\es\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\fa\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\fr\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\nb\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\nl\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\pt-BR\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\pt-PT\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\pt\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\sv\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\tr-TR\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\zh-TW\Hangfire.Core.resources.dll
+E:\C# Projects\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\WebApplication3\bin\Debug\net7.0\zh\Hangfire.Core.resources.dll

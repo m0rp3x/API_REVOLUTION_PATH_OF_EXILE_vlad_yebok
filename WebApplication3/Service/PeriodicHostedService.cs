@@ -4,7 +4,7 @@ namespace WebApplication3.Service;
 
 class PeriodicHostedService : BackgroundService
 {
-    private readonly TimeSpan _period = TimeSpan.FromSeconds(5);
+    private readonly TimeSpan _period = TimeSpan.FromMinutes(2);
     private readonly ILogger<PeriodicHostedService> _logger;
     private readonly IServiceScopeFactory _factory;
     private int _executionCount = 0;
@@ -34,29 +34,12 @@ class PeriodicHostedService : BackgroundService
         {
             try
             {
-                if (IsEnabled)
-                {
-                    // We cannot use the default dependency injection behavior, because ExecuteAsync is
-                    // a long-running method while the background service is running.
-                    // To prevent open resources and instances, only create the services and other references on a run
-
-                    // Create scope, so we get request services
-                    await using AsyncServiceScope asyncScope = _factory.CreateAsyncScope();
+                await using AsyncServiceScope asyncScope = _factory.CreateAsyncScope();
                     
-                    // Get service from scope
-                    SampleService sampleService = asyncScope.ServiceProvider.GetRequiredService<SampleService>();
-                    await sampleService.DoSomethingAsync();
-
-                    // Sample count increment
-                    _executionCount++;
-                    _logger.LogInformation(
-                        $"Executed PeriodicHostedService - Count: {_executionCount}");
-                }
-                else
-                {
-                    _logger.LogInformation(
-                        "Skipped PeriodicHostedService");
-                }
+                // Get service from scope
+                DatabaseUpdate sampleService = asyncScope.ServiceProvider.GetRequiredService<DatabaseUpdate>();
+                await sampleService.Update();
+                
             }
             catch (Exception ex)
             {
