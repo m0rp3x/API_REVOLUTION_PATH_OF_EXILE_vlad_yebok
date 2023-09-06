@@ -39,7 +39,10 @@ class PeriodicHostedService : BackgroundService
                 // Get service from scope
                 DatabaseUpdate sampleService = asyncScope.ServiceProvider.GetRequiredService<DatabaseUpdate>();
                 await sampleService.Update();
-                
+
+                _executionCount++;
+                _logger.LogInformation(
+                    $"Выполненно: {_executionCount} раза");
             }
             catch (Exception ex)
             {
