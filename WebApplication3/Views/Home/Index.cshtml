@@ -44,11 +44,8 @@
                    right: 0;
                    height: 25px;
                    background-color: #007bff;
+                   overflow: hidden;
                }
-        .moving-text {
-            white-space: nowrap;
-            animation: moveText 25s linear infinite;
-        }
         .ZAgolovok{
         text-align: center;
         }
@@ -58,8 +55,9 @@
 </head>
 <body>
 
+
 <div class="animated-line">
-    <div class="moving-text">Ruble @ViewBag.jopa &nbsp; &nbsp; &nbsp; Chaos @ViewBag.pisia</div>
+    <marquee scrolldelay="0" behavior="slide" direction="right">Ruble @ViewBag.jopa &nbsp; &nbsp; &nbsp; Chaos @ViewBag.pisia</marquee>
 </div>
     <div class="ZAgolovok"><h1>Курсик @ViewBag.anal</h1></div>
 

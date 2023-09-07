@@ -15,8 +15,6 @@ public class DivineCourse
 
         PoeTrade poeTrade = new();
 
-        var zalupa = poeTrade.Generate();
-        
     }
     
     
