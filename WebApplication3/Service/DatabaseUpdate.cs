@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebApplication3.Models;
 using WebApplication3.API;
+
 namespace WebApplication3.Service;
+
 using WebApplication3.Data;
 
 public class DatabaseUpdate
@@ -21,25 +23,34 @@ public class DatabaseUpdate
         PoeTrade poeTrade = new();
 
         await poeTrade.Generate();
-
-       
-            var record = db.DivineCourses.FirstOrDefault();
-            if (record == null)
-            {
-                record = new DivineCourse();
-            }
-
-            record.Chaos = (int)Math.Round((double)poeTrade.divinePrice);
-            record.RUB = (int)Math.Round(funPay.MinPrice);
-            record.Date = DateTime.Now;
-
-            db.Entry(record).State = EntityState.Modified;
-            await db.SaveChangesAsync();
-
         
+        var record = new DivineCourse
+        {
+            Chaos = (int)Math.Round((double)poeTrade.divinePrice),
+            RUB = (int)Math.Round(funPay.MinPrice),
+            Date = DateTime.Now
+        };
+
+        db.DivineCourses.Add(record);
+        await db.SaveChangesAsync();
+
 
         await Task.Delay(100);
         _logger.LogInformation(
-            "Sample Service did something.");
+            "Курс был записан");
+    }
+
+    public async Task ReRangeData(DateTime dateTime)
+    {
+        List<DivineCourse> entitiesToDelete = db.DivineCourses
+            .Where(e => e.Date.Year == dateTime.Year &&
+                        e.Date.Month == dateTime.Month &&
+                        e.Date.Day == dateTime.Day)
+            .ToList();
+        entitiesToDelete.Remove(entitiesToDelete.Last());
+
+        db.DivineCourses.RemoveRange(entitiesToDelete);
+
+        await db.SaveChangesAsync();
     }
 }

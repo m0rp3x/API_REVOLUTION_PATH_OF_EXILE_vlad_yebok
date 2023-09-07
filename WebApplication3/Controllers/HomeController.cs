@@ -28,26 +28,20 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        FunPay funPay = new();
-        PoeTrade poeTrade = new();
-
-        await poeTrade.Generate();
-
-        ViewBag.pisia = poeTrade.divinePrice;
-
-        ViewBag.jopa = funPay.MinPrice;
-
-
-        DivineCourse? jopa = db.DivineCourses.FirstOrDefault(m => m != null && m.ID == 1);
-
-        if (jopa != null)
+        DivineCourse? lastCourse = db.DivineCourses.OrderBy(x=>x.Date).Last();
+        DivineCourse? prevCourse = db.DivineCourses.FirstOrDefault(x=>x.ID == lastCourse.ID-1);
+        
+        ViewBag.pisia = lastCourse.Chaos;
+        ViewBag.jopa = lastCourse.RUB;
+        
+        if (lastCourse != null)
         {
-            double rubDifference = funPay.MinPrice - jopa.RUB;
+            double rubDifference = lastCourse.RUB - prevCourse.RUB;
             double percentageChange;
 
-            if (jopa.RUB != 0)
+            if (lastCourse.RUB != 0)
             {
-                percentageChange = (rubDifference / jopa.RUB) * 100;
+                percentageChange = (rubDifference / prevCourse.RUB) * 100;
             }
             else
             {
@@ -59,43 +53,6 @@ public class HomeController : Controller
         }
 
         return View();
-    }
-
-    public IActionResult UpdateData()
-    {
-        try
-        {
-            // Получите запись из базы данных
-            var dataRecord = db.DivineCourses.FirstOrDefault(); // Замените YourTable на имя вашей таблицы
-            
-            FunPay funPay = new();
-            PoeTrade poeTrade = new();
-
-             poeTrade.Generate();
-
-            var popa  = poeTrade.divinePrice;
-
-            var jopa =  funPay.MinPrice;
-            
-            if (dataRecord != null)
-            {
-                // Обновите данные
-                dataRecord.Chaos = (double)popa; // Замените на вашу логику получения нового значения Chaos
-                dataRecord.RUB = jopa; // Замените на вашу логику получения нового значения RUB
-                dataRecord.Date = DateTime.Now;
-
-                // Сохраните изменения в базе данных
-                db.SaveChanges();
-            }
-
-            return RedirectToAction("Index");
-        }
-        catch (Exception ex)
-        {
-            // Обработка ошибок, если необходимо
-            ViewBag.ErrorMessage = ex.Message;
-            return View("Error");
-        }
     }
 }
 
