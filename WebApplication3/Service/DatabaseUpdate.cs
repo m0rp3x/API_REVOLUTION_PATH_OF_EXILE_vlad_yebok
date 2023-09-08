@@ -26,8 +26,8 @@ public class DatabaseUpdate
         
         var record = new DivineCourse
         {
-            Chaos = (int)Math.Round((double)poeTrade.divinePrice),
-            RUB = (int)Math.Round(funPay.MinPrice),
+            Chaos = (double)poeTrade.divinePrice,
+            RUB = funPay.MinPrice,
             Date = DateTime.Now
         };
 
