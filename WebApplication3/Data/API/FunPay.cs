@@ -25,7 +25,6 @@ public class FunPay
             doc.DocumentNode.SelectNodes(
                 "//div[contains(@class, 'tc-server hidden-xxs') and contains(text(), '(PC) Trial of the Ancestors')]");
 
-        // Инициализируем минимальную и максимальную цены
 
         if (serverElements != null)
         {
@@ -47,7 +46,6 @@ public class FunPay
                         string extractedPrice = match.Groups[1].Value;
                         var pricecomplete = float.Parse(extractedPrice.Replace(".", ","));
 
-                        // Сравниваем найденную цену с текущей минимальной и максимальной ценами
                         if (pricecomplete < minPrice)
                         {
                             minPrice = pricecomplete;

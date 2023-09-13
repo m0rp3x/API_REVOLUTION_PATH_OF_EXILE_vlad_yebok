@@ -39,25 +39,52 @@
         }
        .animated-line {
                    position: fixed;
-                   top: 3px;
+                   top: 2px;
                    left: 0;
                    right: 0;
-                   height: 25px;
+                   height: 40px;
                    background-color: #007bff;
                    overflow: hidden;
                }
         .ZAgolovok{
         text-align: center;
-        }
+        }      
         
-      
     </style>
 </head>
 <body>
 
 
 <div class="animated-line">
-    <marquee scrolldelay="0" behavior="slide" direction="right">Ruble @ViewBag.jopa &nbsp; &nbsp; &nbsp; Chaos @ViewBag.pisia</marquee>
+        <marquee scrolldelay="0" behavior="slide" direction="right">
+            <div class="popka">
+                @if(ViewBag.anal > 0)
+                {
+                    <div class="d-inline-block  border border-light border-2 rounded" style="transform: scale(1); margin-top: 2px;">
+                    <div class="text-md-center" style="transform: scale(0.8);">
+                        <i class="bi bi-chevron-up"> <span class="border border-primary"> Divine/Ruble</span> @ViewBag.anal%</i>
+                    </div>
+                    </div>
+
+
+
+
+                }
+                else{
+                  <div class="d-inline-block  border border-light border-2 rounded" style="transform: scale(1); margin-top: 2px;">
+                <div class="text-md-center" style="transform: scale(0.8);">
+                    <i class="bi bi-chevron-up"> <span class="border border-primary"> Divine/Ruble</span> @ViewBag.anal%</i>
+                 </div>
+                </div>
+
+
+
+
+                }
+
+               <!-- <i class="bi bi-chevron-down"> <span>Divine/Chaos</span> @ViewBag.anal%</i> -->
+            </div>
+            </marquee>
 </div>
     <div class="ZAgolovok"><h1>Курсик @ViewBag.anal</h1></div>
 

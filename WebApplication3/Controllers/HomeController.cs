@@ -21,10 +21,7 @@ public class HomeController : Controller
     static ApplicationContext db;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ApplicationContext context)
-    {
-        db = context;
-    }
+    public HomeController(ApplicationContext context) => db = context;
 
     public async Task<IActionResult> Index()
     {
@@ -32,8 +29,8 @@ public class HomeController : Controller
         DivineCourse? prevCourse = db.DivineCourses.FirstOrDefault(x=>x.ID == lastCourse.ID-1);
         
         ViewBag.pisia = lastCourse.Chaos;
-        ViewBag.jopa = lastCourse.RUB;
-        
+        ViewBag.jopa =(double)Math.Round(lastCourse.RUB, 2);
+           
         if (lastCourse != null)
         {
             double rubDifference = lastCourse.RUB - prevCourse.RUB;
@@ -45,11 +42,10 @@ public class HomeController : Controller
             }
             else
             {
-                // Обработка случая, когда RUB равно нулю.
-                percentageChange = 0; // Или любое другое значение по вашему усмотрению.
+                percentageChange = 0; 
             }
 
-            ViewBag.anal = (int)Math.Round(percentageChange);
+            ViewBag.anal = (double) Math.Round(percentageChange,2);
         }
 
         return View();
