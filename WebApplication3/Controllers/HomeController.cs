@@ -34,18 +34,34 @@ public class HomeController : Controller
         if (lastCourse != null)
         {
             double rubDifference = lastCourse.RUB - prevCourse.RUB;
-            double percentageChange;
+            double percentageChangeRub;
 
             if (lastCourse.RUB != 0)
             {
-                percentageChange = (rubDifference / prevCourse.RUB) * 100;
+                percentageChangeRub = (rubDifference / prevCourse.RUB) * 100;
             }
             else
             {
-                percentageChange = 0; 
+                percentageChangeRub = 0; 
             }
 
-            ViewBag.anal = (double) Math.Round(percentageChange,2);
+            ViewBag.anal = (double) Math.Round(percentageChangeRub,2);
+        }
+        if (lastCourse != null)
+        {
+            double ChaosDifference = lastCourse.Chaos - prevCourse.Chaos;
+            double percentageChangeChaos;
+
+            if (lastCourse.RUB != 0)
+            {
+                percentageChangeChaos = (ChaosDifference / prevCourse.RUB) * 100;
+            }
+            else
+            {
+                percentageChangeChaos = 0;
+            }
+
+            ViewBag.ChaosCurse = (double)Math.Round(percentageChangeChaos, 2);
         }
 
         return View();

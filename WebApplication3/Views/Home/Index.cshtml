@@ -42,13 +42,14 @@
                    top: 2px;
                    left: 0;
                    right: 0;
-                   height: 40px;
-                   background-color: #007bff;
-                   overflow: hidden;
+                   height: 37px;
+                   background-color: #F5F5DC;
+                   
                }
         .ZAgolovok{
         text-align: center;
         }      
+      
         
     </style>
 </head>
@@ -57,12 +58,12 @@
 
 <div class="animated-line">
         <marquee scrolldelay="0" behavior="slide" direction="right">
-            <div class="popka">
+            <div class="popka" style="justify-content:space-between;">
                 @if(ViewBag.anal > 0)
                 {
-                    <div class="d-inline-block  border border-light border-2 rounded" style="transform: scale(1); margin-top: 2px;">
+                    <div class=" d-inline-block  border border-success border-2 rounded text-success  mb-3 mr-3" style="transform: scale(0.99);">
                     <div class="text-md-center" style="transform: scale(0.8);">
-                        <i class="bi bi-chevron-up"> <span class="border border-primary"> Divine/Ruble</span> @ViewBag.anal%</i>
+                        <i class="bi bi-chevron-up">  Divine/Ruble @ViewBag.anal%</i>
                     </div>
                     </div>
 
@@ -71,12 +72,36 @@
 
                 }
                 else{
-                  <div class="d-inline-block  border border-light border-2 rounded" style="transform: scale(1); margin-top: 2px;">
-                <div class="text-md-center" style="transform: scale(0.8);">
-                    <i class="bi bi-chevron-up"> <span class="border border-primary"> Divine/Ruble</span> @ViewBag.anal%</i>
-                 </div>
-                </div>
 
+                    <div class="d-inline-block  border border-danger border-2 rounded text-success  mb-3 mr-3" style="transform: scale(0.99); margin-top: 4px;">
+                        <div class="text-md-center" style="transform: scale(0.8);">
+                            <i class="bi bi-chevron-up">  Divine/Ruble @ViewBag.anal%</i>
+                        </div>
+                    </div>
+
+
+
+                }
+                @if (ViewBag.Chaos > 0)
+                {
+                    <div class="d-inline-block  border border-success border-2 rounded text-success  mb-3 mr-3" style="transform: scale(0.99); margin-top: 4px;">
+                        <div class="text-md-center" style="transform: scale(0.8);">
+                            <i class="bi bi-chevron-up">  Divine/Chaos @ViewBag.ChaosCurse%</i>
+                        </div>
+                    </div>
+
+
+
+
+                }
+                else
+                {
+
+                    <div class="d-inline-block  border border-danger border-2 rounded text-success  mb-3 mr-3" style="transform: scale(0.99); margin-top: 4px;">
+                        <div class="text-md-center" style="transform: scale(0.8);">
+                            <i class="bi bi-chevron-up">  Divine/Chaos @ViewBag.ChaosCurse%</i>
+                        </div>
+                    </div>
 
 
 
