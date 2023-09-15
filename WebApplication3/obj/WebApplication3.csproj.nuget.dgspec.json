@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj": {}
+    "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj": {
+    "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
+        "projectUniqueName": "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
         "projectName": "WebApplication3",
-        "projectPath": "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
-        "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\obj\\",
+        "projectPath": "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
+        "packagesPath": "C:\\Users\\koval\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\koval\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,6 +45,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Chart.js": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
@@ -109,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

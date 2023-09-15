@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@model List<DivineCourse>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КУРСИК))</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -49,6 +51,12 @@
         .ZAgolovok{
         text-align: center;
         }      
+        
+        #courseChart {
+            width: 400px; /* желаемая ширина */
+            height: 200px; /* желаемая высота */
+            overflow: hidden;
+        }
       
         
     </style>
@@ -133,6 +141,66 @@
         </tbody>
     </table>
 </div>
+<div>
+    <canvas id="rubChart" width="400" height="200"></canvas>
+</div>
+<div>
+    <canvas id="chaosChart" width="400" height="200"></canvas>
+</div>
+
+<script>
+    var rubCtx = document.getElementById('rubChart').getContext('2d');
+    var chaosCtx = document.getElementById('chaosChart').getContext('2d');
+
+    var dates = @Html.Raw(Json.Serialize(Model.Select(rate => rate.Date.ToShortDateString()).ToList()));
+    var rubValues = @Html.Raw(Json.Serialize(Model.Select(rate => rate.RUB).ToList()));
+    var chaosValues = @Html.Raw(Json.Serialize(Model.Select(rate => rate.Chaos).ToList()));
+
+    var rubConfig = {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [
+                {
+                    label: 'RUB',
+                    data: rubValues,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    fill: false
+                }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    max: 50, // Устанавливаем максимальное значение на оси y
+                    beginAtZero: true // Начинаем ось y с нуля
+                }
+            }
+        }
+    };
+
+    var chaosConfig = {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [
+                {
+                    label: 'Chaos',
+                    data: chaosValues,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    fill: false
+                }
+            ]
+        },
+        options: {}
+    };
+
+    var rubChart = new Chart(rubCtx, rubConfig);
+    var chaosChart = new Chart(chaosCtx, chaosConfig);
+</script>
+
 
 <script>
         function runSteamGame(gameId) {

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "WebApplication3/1.0.0": {
         "dependencies": {
+          "Chart.js": "3.7.1",
           "EntityFramework": "6.4.4",
           "Hangfire": "1.8.5",
           "Hangfire.AspNetCore": "1.8.5",
@@ -57,6 +58,7 @@
           }
         }
       },
+      "Chart.js/3.7.1": {},
       "EntityFramework/6.4.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -849,6 +851,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "Chart.js/3.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gJunTMEueTNdA5Hp92J9sv363msSemW+GSy1VtbrwjxCaMrp+/mgB20EdVezbP34dbM+h+A8G5XbEuL6tOJoCw==",
+      "path": "chart.js/3.7.1",
+      "hashPath": "chart.js.3.7.1.nupkg.sha512"
     },
     "EntityFramework/6.4.4": {
       "type": "package",

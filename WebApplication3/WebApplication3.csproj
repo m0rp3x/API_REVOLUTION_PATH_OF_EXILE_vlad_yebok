@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Chart.js" Version="3.7.1" />
       <PackageReference Include="EntityFramework" Version="6.4.4" />
       <PackageReference Include="Hangfire" Version="1.8.5" />
       <PackageReference Include="Hangfire.AspNetCore" Version="1.8.5" />
@@ -27,6 +28,100 @@
 
     <ItemGroup>
       <Folder Include="ApplicationContext\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <TypeScriptCompile Include="wwwroot\js\chart.js\auto\auto.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.bar.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.bubble.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.doughnut.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.line.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.pie.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.polarArea.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.radar.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\controller.scatter.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\controllers\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.adapters.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.animation.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.animations.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.animations.defaults.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.animator.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.config.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.controller.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.datasetController.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.defaults.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.element.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.interaction.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.layouts.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.layouts.defaults.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.plugins.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.registry.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.scale.autoskip.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.scale.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.scale.defaults.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.ticks.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\core.typedRegistry.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\core\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\elements\element.arc.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\elements\element.bar.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\elements\element.line.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\elements\element.point.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\elements\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.canvas.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.collection.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.color.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.config.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.config.types.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.core.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.curve.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.dom.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.easing.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.extras.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.interpolation.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.intl.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.math.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.options.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.rtl.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\helpers.segment.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\helpers\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\index.umd.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\platform\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\platform\platform.base.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\platform\platform.basic.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\platform\platform.dom.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.colors.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.decimation.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\filler.drawing.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\filler.helper.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\filler.options.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\filler.segment.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\filler.target.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\filler.target.stack.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.filler\simpleArc.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.legend.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.subtitle.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.title.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\plugins\plugin.tooltip.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\scale.category.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\scale.linear.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\scale.linearbase.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\scale.logarithmic.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\scale.radialLinear.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\scale.time.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\scales\scale.timeseries.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types\animation.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types\basic.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types\color.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types\geometric.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types\index.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types\layout.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\dist\types\utils.d.ts" />
+      <TypeScriptCompile Include="wwwroot\js\chart.js\helpers\helpers.d.ts" />
     </ItemGroup>
 
 </Project>

@@ -25,47 +25,39 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        DivineCourse? lastCourse = db.DivineCourses.OrderBy(x=>x.Date).Last();
-        DivineCourse? prevCourse = db.DivineCourses.FirstOrDefault(x=>x.ID == lastCourse.ID-1);
-        
-        ViewBag.pisia = lastCourse.Chaos;
-        ViewBag.jopa =(double)Math.Round(lastCourse.RUB, 2);
-           
-        if (lastCourse != null)
+        DivineCourse? lastCourse = db.DivineCourses.OrderBy(x => x.Date).LastOrDefault();
+        DivineCourse? prevCourse = db.DivineCourses.FirstOrDefault(x => x.ID == lastCourse.ID - 1);
+
+        if (lastCourse != null && prevCourse != null)
         {
+            ViewBag.pisia = Math.Round(lastCourse.Chaos, 2);
+            ViewBag.jopa = Math.Round(lastCourse.RUB, 2);
+
             double rubDifference = lastCourse.RUB - prevCourse.RUB;
-            double percentageChangeRub;
+            double percentageChangeRub = lastCourse.RUB != 0 ? (rubDifference / prevCourse.RUB) * 100 : 0;
+            ViewBag.anal = Math.Round(percentageChangeRub, 2);
 
-            if (lastCourse.RUB != 0)
-            {
-                percentageChangeRub = (rubDifference / prevCourse.RUB) * 100;
-            }
-            else
-            {
-                percentageChangeRub = 0; 
-            }
-
-            ViewBag.anal = (double) Math.Round(percentageChangeRub,2);
-        }
-        if (lastCourse != null)
-        {
             double ChaosDifference = lastCourse.Chaos - prevCourse.Chaos;
-            double percentageChangeChaos;
-
-            if (lastCourse.RUB != 0)
-            {
-                percentageChangeChaos = (ChaosDifference / prevCourse.RUB) * 100;
-            }
-            else
-            {
-                percentageChangeChaos = 0;
-            }
-
-            ViewBag.ChaosCurse = (double)Math.Round(percentageChangeChaos, 2);
+            double percentageChangeChaos = lastCourse.RUB != 0 ? (ChaosDifference / prevCourse.RUB) * 100 : 0;
+            ViewBag.ChaosCurse = Math.Round(percentageChangeChaos, 2);
+        }
+        else
+        {
+            ViewBag.pisia = 0.0;
+            ViewBag.jopa = 0.0;
+            ViewBag.anal = 0.0;
+            ViewBag.ChaosCurse = 0.0;
         }
 
-        return View();
+        var divineCourses = db.DivineCourses
+            .OrderByDescending(course => course.Date)
+            .Take(40)
+            .ToList();;
+
+        return View(divineCourses);
+        
     }
+
 }
 
     

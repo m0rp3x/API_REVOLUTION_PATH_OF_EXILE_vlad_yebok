@@ -46,6 +46,9 @@
           }
         }
       },
+      "Chart.js/3.7.1": {
+        "type": "package"
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "dependencies": {
@@ -1463,6 +1466,19 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Chart.js/3.7.1": {
+      "sha512": "gJunTMEueTNdA5Hp92J9sv363msSemW+GSy1VtbrwjxCaMrp+/mgB20EdVezbP34dbM+h+A8G5XbEuL6tOJoCw==",
+      "type": "package",
+      "path": "chart.js/3.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "chart.js.3.7.1.nupkg.sha512",
+        "chart.js.nuspec",
+        "content/Scripts/chart.js",
+        "content/Scripts/chart.min.js"
       ]
     },
     "EntityFramework/6.4.4": {
@@ -4325,6 +4341,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Chart.js >= 3.7.1",
       "EntityFramework >= 6.4.4",
       "Hangfire >= 1.8.5",
       "Hangfire.AspNetCore >= 1.8.5",
@@ -4338,23 +4355,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Юра\\.nuget\\packages\\": {},
+    "C:\\Users\\koval\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
+      "projectUniqueName": "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
       "projectName": "WebApplication3",
-      "projectPath": "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
-      "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Юра\\Source\\Repos\\m0rp3x\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\obj\\",
+      "projectPath": "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\WebApplication3.csproj",
+      "packagesPath": "C:\\Users\\koval\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\koval\\RiderProjects\\API_REVOLUTION_PATH_OF_EXILE_vlad_yebok\\WebApplication3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\koval\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4382,6 +4399,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Chart.js": {
+            "target": "Package",
+            "version": "[3.7.1, )"
+          },
           "EntityFramework": {
             "target": "Package",
             "version": "[6.4.4, )"
@@ -4446,7 +4467,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
